@@ -1,0 +1,25 @@
+
+.resume-display {
+  display: none;
+  margin-top: 2em;
+  width: 100%;
+  overflow-x: auto;
+  border-top: 5px solid #69c773;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+  background: #FFF;
+  padding: 1em;
+  margin: 1em auto;
+}
+
+.content-section {
+  margin-bottom: 20px;
+}
+
+.content-section h4 {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+section.content-section p {
+  font-size: 14px;
+  margin: 0 0 5px;
+}
