@@ -1,0 +1,32 @@
+Name: John Doe
+Phone: (555) 555-5555
+Email: johndoe@example.com
+
+OBJECTIVE
+Excel in a web developer career.
+
+KEY SKILLS
+Development: HTML5, JavaScript, Bootstrap, AngularJS, ReactJS, CSS3, Media Queries, Development
+Project Management: JIRA, Bitbucket, Confluence, Git, GitHub
+
+EMPLOYMENT HISTORY
+Title: Junior Web Developer
+Company: Apple Inc.
+Dates: June 2015 to September 2016
+* Developed responsive corporate websites
+* Did some cool stuff
+* Led team in closing out JIRA bugs
+
+Title: Web Development Intern
+Company: Google Inc.
+Dates: January 2015 to May 2015
+* Went on coffee runs for the team
+* Team record for longest keg stand
+* Once ate 82 cupcakes during a team building event
+
+EDUCATION
+Degree: BBA
+School: Michigan State University
+GPA: 2.2
+Major: Computer Science
+Minor: Drinking

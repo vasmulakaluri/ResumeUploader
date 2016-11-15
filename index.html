@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" >
+    <title>Crowded - Resume</title>
+    <script type="text/javascript" src="js/lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/underscore-min.js"></script>
+    <script type="text/javascript" src="js/lib/handlebars-v4.0.5.js"></script>
+    <script type="text/javascript" src="js/lib/backbone-min.js"></script>
+    <script type="text/javascript" src="js/app/model/ResumeModel.js"></script>
+    <script type="text/javascript" src="js/app/view/ResumeView.js"></script>
+    <script type="text/javascript" src="js/app/view/AppView.js"></script>
+    <script type="text/javascript" src="js/app/app.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <frame name="navigation-bar">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+              <a class="navbar-brand" href="#">Resume Upload</a>
+            </div>
+          </div>
+        </frame>
+      </nav>
+    </header>
+    <div class="jumbotron">
+      <div class="container">
+        <h3>Upload a resume</h3>
+        <p>This resume will be available as your resume on file when you apply to jobs.<br/></p>
+        <div id="page-wrapper">
+          <div id="app" class="container-fluid">
+            <div class="row">
+              <header>
+                <button id="upload" type="button" class="btn btn-primary">
+                  Upload resume
+                </button><br/><br/>
+                <input id="picker" type="file" class="hidden"/>
+                <section id="resume-display" class="resume-display"></section>
+              </header>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <main id="main"></main>
+    </div>
+    <div class="row">
+      <footer></footer>
+    </div>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    </body>
+    <script type="text/x-handlebars-template" id="resume-view-template">
+      <section class="section-personal content-section">
+        <h4>{{name}}</h4>
+        <p><a href="mailto:{{email}}">{{email}}</a></p>
+        <p><a href="tel:{{phone}}">{{phone}}</a></p>
+      </section>
+      <section class="section-objective content-section">
+        <h4>Summary</h4>
+        <div>
+          {{#each summary}}
+            <p>{{this}}</p>
+          {{/each}}
+        </div>
+      </section>
+      <section class="section-skills content-section">
+        <h4>Skills</h4>
+        <div>
+          {{#each skills}}
+          <p>{{this}}</p>
+          {{/each}}
+        </div>
+      </section>
+      <section class="section-experience content-section">
+        <h4>Experience</h4>
+        <div>
+          {{#each experience}}
+          <p>{{this}}</p>
+          {{/each}}
+        </div>
+      </section>
+      <section class="section-education content-section">
+        <h4>Education</h4>
+        <div>
+          {{#each education}}
+          <p>{{this}}</p>
+          {{/each}}
+        </div>
+      </section>
+    </script>
+</html>
